@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MFA Verification</title>
+</head>
+<body>
+    <h2>Set Up Multi-Factor Authentication</h2>
+
+    <p>Scan the QR Code below using Google Authenticator or any compatible app:</p>
+    <img src="data:image/png;base64,{{ qr_code }}" alt="QR Code"><br>
+
+    <h3>Enter Your OTP</h3>
+    <form method="POST">
+        <label for="otp">One-Time Password:</label>
+        <input type="text" name="otp" required><br>
+        <button type="submit">Verify</button>
+    </form>
+</body>
+</html>
